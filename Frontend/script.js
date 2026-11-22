@@ -28,7 +28,6 @@ async function callGemini(p) {
   const contents = MEMORY.slice(-12).map(m => ({ role: m.role, parts: [{ text: m.text }] }));
   contents.push({ role: 'user', parts: [{ text: p }] });
   let lastErr;
-
   for (const m of MODELS) {
     try {
       const res = await fetch(
@@ -88,7 +87,6 @@ if (camBtn && imgInput) {
 async function askVision(base64, mime, q) {
   add('J.A.R.V.I.S: Analyzing image...', 'ai');
   let lastErr;
-
   for (const m of MODELS) {
     try {
       const res = await fetch(
