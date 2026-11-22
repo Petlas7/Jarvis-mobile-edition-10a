@@ -3,7 +3,7 @@
 let API_KEY = localStorage.getItem('jarvis_key');
 
 if (!API_KEY) {
-    API_KEY = prompt('AQ.Ab8RN6JxvzFuMcUJTw9NS0Z1H4L9sXZ3oDqGsHBu0-YztXeO8w:');
+    API_KEY = prompt('AQ.Ab8RN6JCc15ephpywDJgkRQaCsM9rCzC673k5vy7umL9Q8N-EA:');
     if (API_KEY) localStorage.setItem('jarvis_key', API_KEY);
 }
 
