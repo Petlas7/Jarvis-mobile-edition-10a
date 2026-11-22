@@ -1,7 +1,7 @@
 // ===== 1. API KEY & SMART MODELS =====
 let API_KEY = localStorage.getItem('jarvis_key');
 if (!API_KEY) {
-  API_KEY = prompt('Enter your Gemini API Key:');
+  API_KEY = prompt('AQ.Ab8RN6J-OcFUq_uKB0KasRKZp_nap-jBiihu6kAf779JPp4JYg:');
   if (API_KEY) localStorage.setItem('jarvis_key', API_KEY);
 }
 const MODELS = ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-flash-latest"];
